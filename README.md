@@ -44,3 +44,15 @@ Tipp: Once you seeded the database you can use ```npm run start``` instead of ``
 - If you have trouble logging into psql use command ```sudo -u postgres psql``` and enter your superuser password (it logs you in as superuser)
 - You can use other users if you can't create the motorway one for some reason, but make sure to adjust the code in config.js and connection.js accordingly
 - If you have anyother issues shoot me an email at: ```jacint.m.david@gmail.com```  
+
+
+## Postman
+
+1. Returning all the rows of vehicles data upon making a GET request to /api/v1/vehicles
+![GET_ALL_VEHICLES](https://user-images.githubusercontent.com/89414746/169159660-a1551cf2-e718-4dd1-a539-db0f88b4c6cc.png)
+
+2. Returning instructions on how to reach the API enpoint upon making a GET request to /
+![GET_INSTRUCTIONS](https://user-images.githubusercontent.com/89414746/169160045-65beb9fc-f71a-404b-b83c-0d0a12e25817.png)
+
+3. Redirecting to / upon mmaking a GET request to all other URLs
+![REDIRECT](https://user-images.githubusercontent.com/89414746/169160162-1c226944-6bbf-45ec-8f7a-03939b669023.png)
