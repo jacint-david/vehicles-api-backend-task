@@ -43,7 +43,7 @@ Tip: Once you seeded the database you can use ```npm run start``` instead of ```
     2. https://youtu.be/qw--VYLpxG4?t=654 (video)
 - If you have trouble logging into psql use command ```sudo -u postgres psql``` and enter your superuser password (it logs you in as superuser)
 - You can use other users if you can't create the motorway one for some reason, but make sure to adjust the code in config.js and connection.js accordingly
-- If you have anyother issues shoot me an email at: ```jacint.m.david@gmail.com```  
+- If you have any questions, feel free to get in touch
 
 
 ## Postman
