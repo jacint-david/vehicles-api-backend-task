@@ -2,7 +2,7 @@ const { Router } = require('express');
 
 const vehiclesRouter = new Router();
 
-const { getAllVehicles, getInstructions, redirect } = require('./handlers/handlers');
+const { getAllVehicles, getInstructions, redirect } = require('./handlers/vehiclesHandlers');
 
 vehiclesRouter.get('/', getInstructions);
 
