@@ -24,7 +24,7 @@ Please see these links for popular installation guides:
 - https://youtu.be/qw--VYLpxG4?t=654 (video guide link)
 - you can install postgres in any way you see fit as long as you manage to create user "motorway" with password "thisIsTheWay" with authority to create tables and databases the code should work
 
-Tipp: Once you seeded the database you can use ```npm run start``` instead of ```npm run setup``` when you are restarting the server
+Tip: Once you seeded the database you can use ```npm run start``` instead of ```npm run setup``` when you are restarting the server
 
 ## Test
 1. Test that the database has been seeded by reopening the terminal window where you are logged into psql:
@@ -54,5 +54,5 @@ Tipp: Once you seeded the database you can use ```npm run start``` instead of ``
 2. Returning instructions on how to reach the API enpoint upon making a GET request to /
 ![GET_INSTRUCTIONS](https://user-images.githubusercontent.com/89414746/169160045-65beb9fc-f71a-404b-b83c-0d0a12e25817.png)
 
-3. Redirecting to / upon mmaking a GET request to all other URLs
+3. Redirecting to / upon making a GET request to all other URLs
 ![REDIRECT](https://user-images.githubusercontent.com/89414746/169160162-1c226944-6bbf-45ec-8f7a-03939b669023.png)
