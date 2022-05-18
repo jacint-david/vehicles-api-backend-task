@@ -33,9 +33,9 @@ Tip: Once you seeded the database you can use ```npm run start``` instead of ```
     - You should see some records with columns: id, make, model, createdAt, updatedAt
 2. Test API endpoints are working as expected:
     - Open browser or Postman (if you use Postman, make sure to select 'GET' as the method)
-    - Type in URL ```localhost:3000/``` and press enter to get the instructions
-    - Type in URL ```localhost:3000/api/v1/vehicles``` and press enter to get all the records from table "vehicles" from database "motorway_db"
-    - Type in URL ```localhost:3000/anything-you-want``` and press enter to be redirected to the instructions path
+    - Type in URL [```localhost:3000```](http://localhost:3000/) and press enter to get the instructions
+    - Type in URL [```localhost:3000/api/v1/vehicles```](http://localhost:3000/api/v1/vehicles) and press enter to get all the records from table "vehicles" from database "motorway_db"
+    - Type in URL [```localhost:3000/anything-you-want```](http://localhost:3000/anything-you-want) and press enter to be redirected to the instructions path
 
 ## Troubleshooting and Additional Information
 - If you have issues with the installation steps these sources might help:
