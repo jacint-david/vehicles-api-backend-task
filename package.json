@@ -4,6 +4,12 @@
   "description": "This is a simple API that reads for a preseeded database table and returns all the rows in JSON format, using Express and Sequelize.",
   "main": "server.js",
   "scripts": {
+    "setup": "this is where the setup scripts will go",
+    "create:db": "npx sequelize-cli db:create",
+    "create:model": "npx sequelize-cli model:generate --name Vehicle --attributes make:string,model:string",
+    "create:seeder": "npx sequelize-cli seed:generate --name dummy-data-vehicles",
+    "migrate": "npx sequelize-cli db:migrate",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
