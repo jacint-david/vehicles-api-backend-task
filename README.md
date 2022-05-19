@@ -3,7 +3,7 @@ This is a simple API that reads from a preseeded database table and returns all 
 
 ## Setup:
 
-## Linux:
+### Linux:
 
 1. Clone GitHub Repo onto your local machine and enter folder
 2. Check if you have PostgreSQL installed by using command ```psql --version```, if you do then skip to step 5 otherwise continue to the next step
@@ -18,7 +18,7 @@ This is a simple API that reads from a preseeded database table and returns all 
 Hint: If you have stopped the server, you can just restart it by using ```npm run start```
 
 
-## Mac and Windows:
+### Mac and Windows:
 Please see these links for popular installation guides:
 - https://www.postgresql.org/download/ (download links) 
 - https://youtu.be/qw--VYLpxG4?t=654 (video guide link)
@@ -26,16 +26,29 @@ Please see these links for popular installation guides:
 
 Tip: Once you seeded the database you can use ```npm run start``` instead of ```npm run setup``` when you are restarting the server
 
-## Test
+
+## Testing
+
+### Run Supertest & Jest Tests
+1. Test using the npm script ```npm run test``` which runs both the route and handler tests
+
+    **OR**
+
+1. Test using the npm script ```npm run test:handlers``` which only tests the handler functions
+2. Test using the npm script ```npm run test:routes``` which only tests the responses of the routes
+
+### Test Manually
 1. Test that the database has been seeded by reopening the terminal window where you are logged into psql:
-    - Change to database motorway_db from the default one by using command ```\c motorway_db```
+    - Change to the database motorway_db if you are not already in there by using command ```\c motorway_db```
     - Run sql query ```SELECT * FROM motorway_db;```
-    - You should see some records with columns: id, make, model, createdAt, updatedAt
+    - You should see some seeded records with columns: id, make, model, createdAt, updatedAt
+    
 2. Test API endpoints are working as expected:
     - Open browser or Postman (if you use Postman, make sure to select 'GET' as the method)
     - Type in URL [```localhost:3000```](http://localhost:3000/) and press enter to get the instructions
     - Type in URL [```localhost:3000/api/v1/vehicles```](http://localhost:3000/api/v1/vehicles) and press enter to get all the records from table "vehicles" from database "motorway_db"
     - Type in URL [```localhost:3000/anything-you-want```](http://localhost:3000/anything-you-want) and press enter to be redirected to the instructions path
+
 
 ## Troubleshooting and Additional Information
 - If you have issues with the installation steps these sources might help:
