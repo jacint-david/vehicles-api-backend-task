@@ -11,7 +11,9 @@
     "migrate": "cd database && npx sequelize-cli db:migrate && cd ..",
     "seed": "cd database && npx sequelize-cli db:seed:all && cd ..",
     "start": "node ./network/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node node_modules/.bin/jest --coverage --detectOpenHandles",
+    "test:handlers": "npx jest ./router/handlers/vehiclesHandlers.test.js --detectOpenHandles",
+    "test:routes": "npx jest ./router/vehiclesRouter.test.js --detectOpenHandles"
   },
   "repository": {
     "type": "git",
