@@ -23,7 +23,7 @@ describe('Testing Routes', () => {
         expect(res.text).toEqual("Found. Redirecting to /");
     });
     // TESTING GET ALL VEHICLES (seeded records)
-    test('resonds to /api/v1/vehicles', async () => {
+    test('responds to /api/v1/vehicles', async () => {
         const res = await request(app).get('/api/v1/vehicles');
         expect(res.header['content-type']).toBe('application/json; charset=utf-8');
         expect(res.statusCode).toBe(200);
