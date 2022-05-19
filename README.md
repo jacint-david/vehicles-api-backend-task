@@ -30,12 +30,12 @@ Tip: Once you seeded the database you can use ```npm run start``` instead of ```
 ## Testing
 
 ### Run Supertest & Jest Tests
-1. Test using the npm script ```npm run test``` which runs both the route and handler tests
+1. Test using the npm script ```npm run test``` which runs both the router and handler tests
 
     **OR**
 
 1. Test using the npm script ```npm run test:handlers``` which only tests the handler functions
-2. Test using the npm script ```npm run test:routes``` which only tests the responses of the routes
+2. Test using the npm script ```npm run test:routes``` which only tests the responses of the routers
 
 ### Test Manually
 1. Test that the database has been seeded by reopening the terminal window where you are logged into psql:
@@ -58,14 +58,24 @@ Tip: Once you seeded the database you can use ```npm run start``` instead of ```
 - You can use other users if you can't create the motorway one for some reason, but make sure to adjust the code in config.js and connection.js accordingly
 - If you have any questions, feel free to get in touch
 
+## CLI Supertest & Jest Tests
+
+It tests that:
+- the handler functions are working as expected
+- the routers are serving correct metadata and records
+
+![supertest jest](https://user-images.githubusercontent.com/89414746/169185609-6e368ee0-d712-468e-a4dd-2dc74700f2f2.png)
 
 ## Postman
 
 1. Returning all the rows of vehicles data upon making a GET request to /api/v1/vehicles
+
 ![GET_ALL_VEHICLES](https://user-images.githubusercontent.com/89414746/169159660-a1551cf2-e718-4dd1-a539-db0f88b4c6cc.png)
 
 2. Returning instructions on how to reach the API endpoint upon making a GET request to /
+
 ![GET_INSTRUCTIONS](https://user-images.githubusercontent.com/89414746/169160045-65beb9fc-f71a-404b-b83c-0d0a12e25817.png)
 
 3. Redirecting to / upon making a GET request to all other URLs
+
 ![REDIRECT](https://user-images.githubusercontent.com/89414746/169160162-1c226944-6bbf-45ec-8f7a-03939b669023.png)
