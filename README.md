@@ -1,3 +1,4 @@
+![logo](https://user-images.githubusercontent.com/89414746/169267370-5167ad1f-644a-482e-b1e1-ca4b39a5d5fb.png)
 # Vehicles API - Backend Task - Jacint M. David
 This is a simple API that reads from a preseeded database table and returns all the rows in JSON format using Express and Sequelize.
 
