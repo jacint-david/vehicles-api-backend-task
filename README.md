@@ -51,7 +51,7 @@ Tip: Once you seeded the database you can use ```npm run start``` instead of ```
 1. Returning all the rows of vehicles data upon making a GET request to /api/v1/vehicles
 ![GET_ALL_VEHICLES](https://user-images.githubusercontent.com/89414746/169159660-a1551cf2-e718-4dd1-a539-db0f88b4c6cc.png)
 
-2. Returning instructions on how to reach the API enpoint upon making a GET request to /
+2. Returning instructions on how to reach the API endpoint upon making a GET request to /
 ![GET_INSTRUCTIONS](https://user-images.githubusercontent.com/89414746/169160045-65beb9fc-f71a-404b-b83c-0d0a12e25817.png)
 
 3. Redirecting to / upon making a GET request to all other URLs
