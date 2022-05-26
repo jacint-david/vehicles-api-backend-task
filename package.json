@@ -11,6 +11,7 @@
     "migrate": "cd database && npx sequelize-cli db:migrate && cd ..",
     "seed": "cd database && npx sequelize-cli db:seed:all && cd ..",
     "start": "node ./network/server.js",
+    "start:dev": "npx nodemon ./network/server.js",
     "test": "node node_modules/.bin/jest --coverage --detectOpenHandles",
     "test:handlers": "npx jest ./router/handlers/vehiclesHandlers.test.js --detectOpenHandles",
     "test:routes": "npx jest ./router/vehiclesRouter.test.js --detectOpenHandles"
